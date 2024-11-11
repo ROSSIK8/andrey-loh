@@ -136,7 +136,7 @@ header {
 main {
   margin-top: 60px;
   flex: 1 1 auto;
-  background-image: url("/img/кэт.jpg");
+  background-image: url("./img/кэт.jpg");
 }
 
 .field {
@@ -147,7 +147,7 @@ main {
   margin-top: 60px;
   width: 800px;
   height: 400px;
-  background-image: url("/img/back-for-game.webp");
+  background-image: url("./img/back-for-game.webp");
   background-size: contain;
   border: 5px solid #000;
   position: relative;
@@ -182,7 +182,7 @@ main {
   height: 300px;
   transition: transform 0.5s;
   transform: scale(0);
-  background-image: url("/img/end.jpg");
+  background-image: url("./img/end.jpg");
   background-size: contain;
   position: absolute;
   left: calc(50% - 150px);
