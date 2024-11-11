@@ -1,7 +1,7 @@
 @import 'nullstyle.scss';
 @font-face {
     font-family: 'HarryPotterKudos';
-    src: url('/fonts/HarryPotterKudos-Heavy.ttf') format('truetype');
+    src: url('../fonts/HarryPotterKudos-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Dusha V5';
-    src: url('/fonts/DushaV5-Regular.ttf') format('truetype');
+    src: url('../fonts/DushaV5-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
