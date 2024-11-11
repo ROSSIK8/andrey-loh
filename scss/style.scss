@@ -1,0 +1,194 @@
+@import 'nullstyle.scss';
+@font-face {
+    font-family: 'HarryPotterKudos';
+    src: url('/fonts/HarryPotterKudos-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dusha V5';
+    src: url('/fonts/DushaV5-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.hide {
+    display: none!important;
+}
+
+.wraper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dusha V5';
+
+    min-width: 320px;
+    height: 100%;
+
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: aquamarine;
+
+    position: fixed;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    margin: 5px 0 0 0;
+    justify-content: center;
+}
+.logo__row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo__img {
+    height: 50px;
+    border-radius: 5px;
+}
+.logo__name {
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+main {
+    margin-top: 60px;
+    flex: 1 1 auto;
+    background-image: url('/img/кэт.jpg');
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    margin-top: 60px;
+
+    width: 800px;
+    height: 400px;
+
+    background-image: url(/img/back-for-game.webp);
+    background-size: contain;
+    border: 5px solid #000;
+    position: relative;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.counter {
+    font-size: 72px;
+    font-family: HarryPotterKudos;
+    position: absolute;
+    color: #fff;
+    left: 10%;
+    top: 15%;
+}
+
+.field__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 300px;
+    height: 150px;
+    border: 2px solid red;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.end {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s;
+    transform: scale(0);
+
+    background-image: url('/img/end.jpg');
+    background-size: contain;
+
+    position: absolute;
+    left: calc(50% - 150px);
+    z-index: 1;
+
+    button {
+        font-size: 24px;
+        background-color: aqua;
+        width: 150px;
+        height: 30px;
+        position: absolute;
+        top: 85%;
+        left: calc(50% - 75px);
+    }
+}
+
+.management__title {
+    text-transform: uppercase;
+}
+.arrow {
+    width: 50px;
+}
+
+.btn-play {
+    width: 90px;
+    height: 30px;
+
+    background-color: red;
+
+    color: #fff;
+    font-size: 24px;
+}
+
+.andrey {
+    width: 40px;
+    height: 90px;
+    
+    border-radius: 5px;
+    
+    // transition: left 0.2s ease;
+
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 65%;
+    img {
+        width: 100%;
+    }
+}
+
+.dick {
+    width: 40px;
+
+    animation: none;
+    // transition: top 0.2s ease;
+
+    position: absolute;
+    top: -40px;
+    // left: 0;
+    img {
+        width: 100%;
+    }
+}
+
+@keyframes fall {
+    from {
+        top: -40px;
+    }
+    to {
+        top: 300px
+    }
+}
