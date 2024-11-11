@@ -4,8 +4,8 @@ const menu = document.querySelector('.field__menu');
 const end = document.querySelector('.end');
 const andrey = document.querySelector('.andrey');
 const dick = document.querySelector('.dick')
-const eatingFoodMusic = new Audio('/audio/food_G1U6tlb.mp3')
-const gameOverMusic = new Audio('/audio/sound_ErK79lZ.mp3')
+const eatingFoodMusic = new Audio('../audio/food_G1U6tlb.mp3')
+const gameOverMusic = new Audio('../audio/sound_ErK79lZ.mp3')
 
 let counterText = document.querySelector('.counter')
 let position = 20;
