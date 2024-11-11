@@ -39,6 +39,8 @@ function endMove(e) {
 } 
 
 btnPlay.addEventListener('click', () => {
+    eatingFoodMusic.load();
+    gameOverMusic.load();
     menu.classList.add('hide');
     startGame();
 })
