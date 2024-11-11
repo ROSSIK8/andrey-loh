@@ -2,12 +2,12 @@ const btnPlay = document.querySelector('.btn-play');
 const btnRestart = document.querySelector('.btn-restart');
 const menu = document.querySelector('.field__menu');
 const end = document.querySelector('.end');
-let counterText = document.querySelector('.counter')
-
-
 const andrey = document.querySelector('.andrey');
 const dick = document.querySelector('.dick')
+const eatingFoodMusic = new Audio('/audio/food_G1U6tlb.mp3')
+const gameOverMusic = new Audio('/audio/sound_ErK79lZ.mp3')
 
+let counterText = document.querySelector('.counter')
 let position = 20;
 let intervalId, intervalIdDick, counter;
 let positionDick = Math.floor(Math.random() * 720 + 40);
@@ -76,14 +76,16 @@ function startGame() {
             andreyRect.top <= dickRect.bottom &&
             andreyRect.bottom >= dickRect.top
         ) {
+            eatingFoodMusic.play()
             counter++;
             counterText.textContent = counter;
             updatePositionDick()
         } else if (dickRect.bottom >= 450) {
+            gameOverMusic.play()
             clearInterval(intervalIdDick);
             clearInterval(intervalId);
             end.style.transform = 'scale(1)';
-            // document.removeEventListener('keydown', startMove)
+            document.removeEventListener('keydown', startMove)
         }
     
         
