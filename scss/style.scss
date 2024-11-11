@@ -1,7 +1,7 @@
 @import 'nullstyle.scss';
 @font-face {
     font-family: 'HarryPotterKudos';
-    src: url('./fonts/HarryPotterKudos-Heavy.ttf') format('truetype');
+    src: url('/fonts/HarryPotterKudos-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Dusha V5';
-    src: url('./fonts/DushaV5-Regular.ttf') format('truetype');
+    src: url('/fonts/DushaV5-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -67,7 +67,7 @@ header {
 main {
     margin-top: 60px;
     flex: 1 1 auto;
-    background-image: url('./img/кэт.jpg');
+    background-image: url('/img/кэт.jpg');
 }
 
 .field {
@@ -81,7 +81,7 @@ main {
     width: 800px;
     height: 400px;
 
-    background-image: url('./img/back-for-game.webp');
+    background-image: url('/img/back-for-game.webp');
     background-size: contain;
     border: 5px solid #000;
     position: relative;
@@ -119,7 +119,7 @@ main {
     transition: transform 0.5s;
     transform: scale(0);
 
-    background-image: url('./img/end.jpg');
+    background-image: url('/img/end.jpg');
     background-size: contain;
 
     position: absolute;
